@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html id="whole" style="background-color:#FFFFFF;"> 
+    <section class="image-box">
+        <header class="background">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/webpage.css') }}">
+            <script src="{{ url_for('static', filename='js/webpage.js') }}"></script>
+            <title>All is well</title>
+            <script>
+            //새로고침
+                setTimeout(function(){
+                location.reload();}, 3000);
+            </script>
+           <title>All is well</title>
+
+           <div class="top"></div>
+           <div class="logo">
+             <h3>All is well</h3>
+           </div>
+
+            <div class="home_layout">
+                <h1 class="video"><img src="{{ url_for('video_feed') }}"></h1>
+            
+                <h1 class="title" id="home"> <span>STATUS</span> </h1>
+                <h1 class="title_element" id="state">
+                    {% for state in states %}
+                      {% if state=="good posture" %}
+                        <p class="state_good">{{state}}</p>
+                        </br>
+                      {% elif state=="bad posture" %}
+                        <p class="state_bad">{{state}}</p>
+                        </br>
+                      {% else %}
+                        <p class="state">{{state}}</p>
+                        </br>
+                      {% endif %}
+
+                    {% endfor %}
+                </h1>
+            </div>
+
+        </header>
+    </section>
+
+    <about>
+      <section>
+        <h4 id="about"> ABOUT ME </h4>
+        <div class="profile-lockup">
+          <div class="blurb">
+            <p2><strong> In the summer of 2016, I started to learn CSS, HTML and Javascript with the help of FreeCodeCamp.</strong> After completing the front-end portion of the curriculum, I continued my education with the help of a number of resources I have listed below. This website is used to illustrate my ongoing education, in the hope of someday obtaining the competency required to be a front-end developer.</p2>
+          </div>
+      </section>
+    </about>
+    
+    
+      
+      
+      
+    <section class="alt-section">
+      <div class="skill-lockup">
+        <h4 class="" id="skills"> SKILLS </h4>
+        <div class="padding2 skill-icon-container text-center">
+          <!--PUT LANGUAGE ICONS-->
+          <a class="icon"><i class="skill-i fa fa-html5" aria-hidden="true"></i><p8>HTML</p8></a>
+          <a class="icon"><i class="skill-i fa fa-css3" aria-hidden="true"></i><p8>CSS</p8></a>
+          <a class="icon"><img class="js-img" src="https://maxcdn.icons8.com/Share/icon/ios7/Logos//javascript1600.png" alt="JS"></img>
+            <p8>JAVASCRIPT</p8>
+          </a>
+          <!--better way to do this than this -->
+          <a class="icon"><img class="js-img" src="https://cdn1.iconfinder.com/data/icons/simple-icons/2048/jquery-2048-black.png"></img>
+            <p8>JQUERY</p8>
+          </a>
+          <!-- <a class="icon"></a> -->
+    
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    <footer>
+      <div class="lockup">
+        <div class="logo2">
+          <a href="#home"><h3 class="position">M</h3></a>
+        </div>
+    
+    
+      </div>
+    </footer>
+    
