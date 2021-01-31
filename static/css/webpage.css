@@ -1,0 +1,815 @@
+/*FONT*/
+@font-face {
+  font-family: '양진체';
+  src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*HEADER*/
+
+header {
+position: relative;
+min-height: 100%;
+height: 900px;
+width: 100%;
+background-size: cover;
+}
+
+.top{
+clear: both;
+height : 40px;
+background: #9DC3C1;
+}
+
+a {
+font-family: '양진체';
+display: inline-block;
+color: blue rgba(0, 0, 0, 0.5);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+padding: 5px;
+padding-top: 10px;
+padding-right: 20px;
+}
+
+a:hover {
+color: blue rgba(0, 0, 0, 1.0);
+text-decoration: none;
+}
+
+.title {
+font-family: 'NEXON Lv2 Gothic Light';
+float: left;
+color: black;
+letter-spacing: 0.05em;
+padding-top: 100px;
+margin-left:350px;
+}
+
+/*if test*/
+.state_good{
+  color:blue;
+}
+.state_bad{
+  color:red;
+}
+
+
+/*end test*/
+
+.video{
+float: left;
+margin-left : 30px;
+margin-right : 30px;
+height : 500px;
+width : 300px;
+border: black solid 2px;
+}
+
+.home_layout{
+clear: both;
+}
+
+span {
+display: inline-block;
+padding: 0.2em 0.5em;
+
+width : 100px;
+}
+
+@media (max-width: 950px) {
+.subTitle {
+  display: none;
+}
+}
+
+.logo {
+display: inline-block;
+float: left;
+margin-left: 50px;
+margin-top: 5px;
+}
+
+h3 {
+display: inline-block;
+color: #6E7783;
+border-bottom: solid grey 1px;
+padding: 2px 5px;
+font-size: 35px;
+weight: 700;
+opacity: 0.75;
+}
+
+h3:hover {
+opacity: 0.5;
+cursor: pointer;
+}
+
+
+
+
+/*ABOUT*/
+
+p2 {
+font-family: 'Cormorant', serif;
+}
+
+.profile-lockup {
+margin-top: 20px;
+max-width: 780px;
+margin: 0 auto;
+/*centered*/
+padding-bottom: 50px;
+clear: both;
+/*
++clearfix;
+display: flex;
+align-items: center; 
+justify-content: space-between;
+*/
+}
+
+.blurb {
+max-width: 620px;
+padding: 0 15px;
+margin: 0 auto;
+/*centered*/
+margin: 40px auto;
+font-size: 24px;
+text-align: center;
+font-weight: 400;
+/*
+font-variant: small-caps;
+*/
+}
+
+@media (max-width: 750px) {
+.blurb {
+  margin-top: 5px;
+  padding: 0px 20px;
+}
+}
+
+
+/*SKILL-LOCKUP*/
+
+.padding {
+padding: 80px 0 80px 0;
+}
+
+.padding2 {
+padding-top: 40px;
+}
+
+.skill-lockup {
+/*change to OVERFLOW-Y: HIDDEN -- add class and certificates*/
+width: 100%;
+padding-bottom: 100px;
+}
+
+
+/**/
+
+.skill-icon-container {
+max-width: 860px;
+/*960px*/
+margin: 0px auto;
+overflow: hidden;
+/*=== +clear(fix)*/
+}
+
+a {
+display: block;
+}
+
+.icon {
+display: inline-block;
+}
+
+.skill-i {
+padding: 0px 10px 0px 15px;
+font-size: 55px;
+}
+
+.js-img {
+height: 100px;
+min-height: 100px;
+position: flex;
+cursor: pointer;
+opacity: 0.55;
+margin-top: -30px;
+/**/
+margin-bottom: -10px;
+}
+
+.js-img:hover {
+opacity: 0.85;
+}
+
+p8 {
+display: block;
+text-align: center;
+/*color: #0F0FB0;*/
+color: #575757;
+opacity: 0.85;
+}
+
+.fa {
+cursor: pointer;
+color: #575757;
+opacity: 0.85;
+}
+
+.fa:hover {
+color: black;
+}
+
+/*expandable-section*/
+
+.write-section {
+overflow-x: hidden;
+/*Prevents horizontal scrolling*/
+}
+
+.slider-page {
+width: 200%;
+position: relative;
+left: 0%;
+/*+transition(800ms)*/
+transition: all 1000ms;
+}
+
+.icon-wrap,
+.write-wrap {
+width: 50%;
+float: left;
+}
+
+.write-container {
+padding: 30px;
+max-width: 600px;
+margin: 0 auto;
+display: none;
+}
+
+img {
+max-width: 100%;
+padding: 20px 0 20px 0;
+}
+
+h5 {
+color: #0F0FB0;
+opacity: 0.85;
+font-size: 24px;
+text-align: center;
+display: inline-block;
+/*
+padding-top: 100px
+padding: 50px 0 30px 0;
+*/
+/**/
+font-weight: 300;
+font-size: 34px;
+line-height: 1.2;
+margin: 50px 0px 0px 80px;
+padding-bottom: 30px;
+}
+
+.return-arrow {
+cursor: pointer;
+position: absolute;
+margin: 40px 0px 0px 0px;
+/*
+position: absolute;
+(-4px null null -60px);
+
+-- ARROW DOES NOT ALIGN WITH TEXT!!! --
+*/
+}
+
+
+/**/
+
+.header-image {
+padding-bottom: 50px;
+}
+
+p {
+margin: 30px auto;
+width: 600px;
+}
+
+hr {
+width: 600px;
+}
+
+@media(max-width: 750px) {
+h5 {
+  font-size: 30px;
+}
+.return-arrow {
+  font-size: 40px;
+  margin-top: 45px;
+}
+.header-image {
+  max-width: 100%;
+  padding: 5px 10px;
+}
+p {
+  width: 100%;
+  margin-left: 0%;
+  padding: 5px 10px;
+}
+hr {
+  width: 100%;
+  margin-left: 0%;
+}
+}
+
+@media(max-width: 500px) {
+.header-image {
+  max-width: 100%;
+  padding: 5px 10px;
+  left: 15%;
+}
+p {
+  width: 100%;
+  margin-left: 0%;
+  padding: 5px 10px;
+  left: 15%;
+}
+hr {
+  width: 100%;
+  left: 15%;
+  padding-bottom: 20px;
+}
+}
+
+
+/*WORK*/
+
+
+/*
+-- fix alignment issuees --
+-- get rid of center in html -- 
+-- decide what to do with arrow icon --
+-- width is is all messed up --
+-- need to fix the font on the work icons so they fit the screen when it         shrinks -- 
+*/
+
+.alt-section {
+background: #F3F3F3;
+/*e5eaee*/
+}
+
+.thumb-container {
+max-width: 960px;
+margin: 0 auto;
+padding-bottom: 100px;
+overflow: hidden;
+/*
++clearfix -- clear: both // min-height: contain-floats;;
+see: https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
+*/
+}
+
+
+/*NEED SCSS OR -- SaSS -- */
+
+.thumb-unit {
+width: 25%;
+/*padding-top -- proportional height*/
+padding-top: 20%;
+position: relative;
+display: block;
+float: left;
+position: center center;
+repeat: no-repeat;
+size: cover;
+overflow: hidden;
+/**/
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+.thumb-unit:hover {
+/**/
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
+/**/
+/* want button to transition in */
+}
+
+
+/*
+&:hover, thumb-overlay
++position(absolute, 0% 0px null 0px)
+*/
+
+
+/*TRANSITION --button-- stuff below -- weed out extraneous code*/
+
+.thumb-overlay {
+top: 15%;
+height: 60%;
+width: 100%;
+right: .000005%;
+/*why*/
+/*
+{remove the width} -- 
++position(absolute, 100% 0px null 0px)
+background: fade-out(--color -- , opacity level (between 0 and 1))
++perspective (300) -- gives 3D perspective -- then use         transform: rotateX(0-90) in hover --
+*/
+display: flex;
+align-items: center;
+justify-content: space-around;
+/*TRANSITION --button-- stuff below */
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px transparent;
+position: absolute/*(100% 0px null 0px)*/
+;
+background: #000000;
+-webkit-transition-property: color;
+transition-property: color;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+
+
+/*TRANSITION --button-- stuff below */
+
+.thumb-overlay:before {
+content: "";
+position: absolute;
+z-index: 1;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #e1e1e1;
+-webkit-transform: scaleY(1);
+transform: scaleY(1);
+-webkit-transform-origin: 50%;
+transform-origin: 50%;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+
+
+/*TRANSITION --button-- stuff below */
+
+.thumb-overlay:hover,
+.thumb-overlay:focus,
+.thumb-overlay:active {
+color: white;
+}
+
+
+/*TRANSITION --button-- stuff below */
+
+.thumb-overlay:hover:before,
+.thumb-overlay:focus:before,
+.thumb-overlay:active:before {
+-webkit-transform: scaleY(0);
+transform: scaleY(0);
+}
+
+.fa-angle-double-up {
+color: white;
+position: relative;
+left: 45%;
+font-size: 40px;
+margin: 0 auto;
+}
+
+.fa-angle-double-up:hover {
+color: #F3F3F3;
+text-align: center;
+/*
+transition: ease-up;  // would be a nice touch
+*/
+}
+
+
+/*
+-- need to fix the font on the work icons so they fit the screen when it         shrinks -- 
+*/
+
+.strong2 {
+display: block;
+padding: 5px 20px;
+color: white;
+font-weight: 300;
+font-size: 24px;
+line-height: 1.2;
+}
+
+.strong3 {
+display: block;
+padding: 5px 20px;
+color: white;
+font-weight: 300;
+font-size: 20px;
+/*CHANGE*/
+line-height: 1.2;
+}
+
+@media screen and (max-width: 900px) {
+.thumb-container {
+  min-width: 75%;
+  margin: 0 12.5%;
+}
+.thumb-unit {
+  width: 100%;
+  padding-top: 25%;
+}
+.strong2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.fa-angle-double-up {
+  display: none;
+}
+}
+
+@media screen and (max-width: 750px) {
+.strong2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.strong3 {
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.strong2 {
+  font-size: 20px;
+  margin-top: -1px;
+}
+}
+
+
+/*LOGOS DO NOT WORK AS SCREEN SHRINKS*/
+
+@media(max-width: 900px) {
+hr {
+  display: flex;
+  width: 75%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.client-arrows {
+  display: none;
+}
+.client-slider {
+  width: 100%;
+  text-align: center;
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+}
+.client-unit,
+active-client-unit,
+active-client-logo {
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.client-face {
+  margin-top: -50px;
+  /**/
+  margin-bottom: 50px;
+}
+.client-content {
+  padding: 0px 30px 0px 30px;
+  max-width: 400px;
+  margin: 0px auto;
+}
+.clients-logo {
+  /*display: none; to create a mobile only logo nav,
+  or flex-wrap: wrap; 
+  display: flex; 
+  padding: 0px; */
+  display: none;
+}
+.split {
+  display: flex;
+  position: relative;
+  color: black;
+  margin-bottom: 30px;
+}
+}
+
+@media(max-width: 750px) {
+.split {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+}
+
+@media(max-width: 700px) {
+.split {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.client-slider {
+  width: 100%;
+  text-align: center;
+  /* max-height: 500px;  
+    overflow: hidden; */
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+}
+.client-unit,
+active-client-unit,
+active-client-logo {
+  /**/
+  /**/
+  /**/
+  /**/
+  /**/
+  display: block;
+  position: relative;
+  margin-left: 0px;
+  left: auto;
+}
+.client-face {
+  margin-top: -60px;
+  /**/
+  margin-bottom: 50px;
+  margin-right: 15px;
+}
+.client-content {
+  padding: 20px 30px;
+  max-width: 400px;
+  margin: 0px auto;
+}
+.clients-logo {
+  display: none;
+}
+}
+
+@media(max-width: 500px) {
+.split {
+  padding-top: 50px;
+  text-align: center;
+  width: 75%;
+  float: left;
+  padding-bottom: 50px;
+}
+}
+
+
+/*.contact-info-group{ //changed to contact-info//
+
+} 
+*/
+
+.contact-info {
+/*label*/
+width: 100%;
+float: left;
+box-sizing: border-box;
+}
+
+label {
+display: block;
+margin-bottom: 30px;
+}
+
+span2 {
+display: block;
+}
+
+[type="submit"] {
+background: #0F0FB0;
+color: white;
+font-size: 18px;
+text-transform: uppercase;
+width: 100%;
+/*33%*/
+}
+
+[type="submit"]:hover {
+background: #575757;
+border-color: #0F0FB0;
+}
+
+.submit-wrap {
+text-align: right;
+}
+
+@media(max-width: 900px) {
+[type="submit"] {
+  margin: 0 10px 50px;
+  /*fix*/
+  padding: null 150px null 150px;
+  width: 95%;
+  margin-right: 20%;
+  /*common adjustment???*/
+}
+label {
+  padding: 5px 10px;
+}
+}
+
+
+/*BODY*/
+
+body {
+min-height: 500px;
+margin: 0;
+padding: 0;
+}
+
+.bodyP {
+margin: 20px;
+}
+
+h4 {
+color: #0F0FB0;
+opacity: 0.85;
+font-size: 24px;
+text-align: center;
+/*padding-top: 100px*/
+padding: 50px 0 30px 0;
+}
+
+
+/*FOOTER*/
+
+
+/*
+--Need to fix footer when screen shrinks (@Media(630px))--
+--Anchor tags do not work inside footer--
+*/
+
+footer {
+position: relative;
+width: 100%;
+/*height: 100px*/
+background-image: url(http://colorlisa.com/pictures/39_1.jpg);
+background-size: cover;
+-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+overflow: auto;
+/*hack for CLEARFIX*/
+}
+
+.lockup {
+margin-left: 30px;
+}
+
+.contentWrapUp {
+float: left;
+margin-left: 30px;
+}
+
+.logo2 {
+float: left;
+}
+
+
+/*delete below when above is fixed*/
+
+.home {
+margin-top: 25%;
+text-decoration: none;
+}
+
+.navFoot {
+margin-top: 25px;
+}
